@@ -17,7 +17,7 @@ export class ClassRocket extends Component {
   }
 
   render() {
-    const { initialLaunchTime } = this.state;
+    const { initialLaunchTime } = React.memo(this.state);
 
     return <RocketCore initialLaunchTime={initialLaunchTime} />;
   }
